@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+
+.Projects {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    padding: 140px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.Projects div {
+    height: 200px;
+    width: 600px;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.Projects h1 {
+    color: #fff;
+    text-shadow:
+      0 0 7px rgb(217, 0, 255),
+      0 0 8px rgb(217, 0, 255),
+      0 0 15px rgb(217, 0, 255),
+      0 0 32px rgb(217, 0, 255),
+      0 0 42px rgb(217, 0, 255),
+      0 0 62px rgb(217, 0, 255),
+      0 0 82px rgb(217, 0, 255),
+      0 0 101px rgb(217, 0, 255);
+      text-align: center;
+      margin-bottom: 50px;
+}
+
+.Projects-container h1 {
+    margin-bottom: 0;
+    color: black;
+    text-shadow: none;
+    padding-top: 40px;
+}
+
+.Projects-container div p a {
+    color: purple;
+    font-size: 18px;
+}
+
+.Projects-container div a {
+    font-size: 14px;
+    color: blue;
+}
+
+
+
+@media (max-width: 745px) {
+    .Projects {
+        height: 110vh;
+    }
+    .Projects div {
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .Projects {
+        padding: 100px;
+        height: 120vh;
+    }
+    .Projects div {
+        height: 200px;
+        width: 200px;
+
+    }
+    .Projects-container h1 {
+        margin-bottom: 0;
+        color: black;
+        text-shadow: none;
+        padding-top: 40px;
+        font-size:34px;
+    }
+}

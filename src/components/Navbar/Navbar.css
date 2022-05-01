@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+*,*::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
+li {
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: rgb(186, 104, 200);
+    position: fixed;
+    width: 100%;
+}
+
+.nav_brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.nav_toggler div{
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background-color: white;
+}
+
+.nav_toggler {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav_toggler {
+        display: block;
+    }
+    .nav_menu {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 65%;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(98, 34, 109);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .nav_menu li {
+        margin-right: 5px;
+    }
+}
+
+.nav_active {
+    transform: translateX(0);
+}
+

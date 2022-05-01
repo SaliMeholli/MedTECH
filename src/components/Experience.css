@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+.experience {
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 190px;
+}
+.experience h1 {
+    text-align: center;
+}
+.experience-container h1 {
+    color: #fff;
+    text-shadow:
+      0 0 7px rgb(217, 0, 255),
+      0 0 8px rgb(217, 0, 255),
+      0 0 15px rgb(217, 0, 255),
+      0 0 32px rgb(217, 0, 255),
+      0 0 42px rgb(217, 0, 255),
+      0 0 62px rgb(217, 0, 255),
+      0 0 82px rgb(217, 0, 255),
+      0 0 101px rgb(217, 0, 255);
+}
+
+.experience-container div {
+    margin: 50px 0 0 20px;
+    text-align: center;
+}

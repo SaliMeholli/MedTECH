@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.about {
+    height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./pictures/aboutbg.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.about h1 {
+    color: white;
+}
+.about-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 400px;
+}
+
+.icon {
+    font-size: 45px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow:
+      0 0 7px rgb(217, 0, 255),
+      0 0 10px rgb(217, 0, 255),
+      0 0 21px rgb(217, 0, 255),
+      0 0 42px rgb(217, 0, 255),
+      0 0 82px rgb(217, 0, 255),
+      0 0 92px rgb(217, 0, 255),
+      0 0 102px rgb(217, 0, 255),
+      0 0 151px rgb(217, 0, 255);
+}
+.icon:hover{
+    font-size: 45px;
+    cursor: pointer;
+    color: rgb(236, 129, 255);
+    transition: .3s all;
+}
+.about-icons div p{
+    font-size: 30px;
+    color: #fff;
+    text-shadow:
+      0 0 7px rgb(217, 0, 255),
+      0 0 10px rgb(217, 0, 255),
+      0 0 21px rgb(217, 0, 255),
+      0 0 42px rgb(217, 0, 255),
+      0 0 82px rgb(217, 0, 255),
+      0 0 92px rgb(217, 0, 255),
+      0 0 102px rgb(217, 0, 255),
+      0 0 151px rgb(217, 0, 255);
+}
+
+
+@media (max-width:768px) {
+    .about-icons {
+        margin-top: 100px;
+        justify-content: space-around;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+    .about-icons div {
+        margin: 30px 0;
+    }
+    .about {
+    padding-top: 50px;
+        height: 100vh;
+    }
+}
